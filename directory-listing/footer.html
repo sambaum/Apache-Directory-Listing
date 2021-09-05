@@ -39,7 +39,7 @@
 
     var pathContents = ['<a href="/">/</a>'];
     Array.prototype.forEach.call(pathParts, function(part, index) {
-      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '">' + decodeURI(part) + '</a>');
+      pathContents.push('<a href="/' + joinUntil(pathParts, index, '/') + '/' + '">' + decodeURI(part) + '</a>');
     });
 
     path.innerHTML = pathContents.join('&rsaquo;');
